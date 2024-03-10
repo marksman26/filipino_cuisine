@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filipino Cuisine</title>
+    <link rel="stylesheet" type="text/css" href="STYLE.css">
+</head>
+<body>
+    <div class="header">
+		<div class="logo">
+			<h4>Food Guide</h4>
+			<h1>Filipino Cuisine</h1>
+			<h4>Made by: Carlos Sadaba</h4>
+		</div>
+        <div class="menu">
+			<button class="Menu-Button" id="menuButton" onclick="exit()">Menu</button>
+		</div>
+	</div>
+
+    <div class="foods">
+		
+		<div class="menu-container adobo" onclick="adob()">
+			<span class="menu-top">Adobo</span>
+			<span class="menu-bottom"> Try this tasty dish<br>and be amazed!<br><br>Read More</span>
+		</div>
+		<div class="menu-container sinigang" onclick="sinig()">
+			<span class="menu-top">Sinigang</span>
+			<span class="menu-bottom">You like sour taste? <br>This one is for you!<br><br>Read More</span>
+		</div>
+		<div class="menu-container bulalo" onclick="bula()">
+			<span class="menu-top">Bulalo</span>
+			<span class="menu-bottom">Taste the best soup <br>enjoy every moment!<br><br>Read More</span>
+		</div>
+		<div class="menu-container lecheflan" onclick="leche()">
+			<span class="menu-top">Leche Flan</span>
+			<span class="menu-bottom">Sweetest dessert<br>to finish your meal!<br><br>Read More </span>
+		</div>
+
+        <div class="content-open" id="ado">
+			<div class="content">
+				<div class="content-left adobo">
+					<h1 class="menu-Title">Adobo</h1>
+				</div>
+				<div class="content-right">
+					<br><br><br>
+					<p>Adobo refers to a method of marinating and stewing for any cut of meat or fish in a briny mixture of vinegar, soy sauce, and spices. </p>
+				</div>
+			</div>
+		</div>
+
+        <div class="content-open" id="sini">
+			<div class="content">
+				<div class="content-left sinigang">
+					<h1 class="menu-Title">Sinigang</h1>
+				</div>
+				<div class="content-right">
+					<br><br><br>
+					<p>Sinigang is a tamarind-based soup that is known for its sour and savory taste. You can make it with either fish, pork belly, spare ribs or corned beef.</p>
+				</div>
+			</div>
+		</div>
+
+        <div class="content-open" id="bul">
+			<div class="content">
+				<div class="content-left bulalo">
+					<h1 class="menu-Title">Bulalo</h1>
+				</div>
+				<div class="content-right">
+					<br><br><br>
+					<p>Bulalô is a beef dish from the Philippines. It is a light colored soup that is made by cooking beef shanks and bone marrow until the collagen and fat has been melted into the clear broth.</p>
+				</div>
+			</div>
+		</div>
+
+        <div class="content-open" id="lech">
+			<div class="content">
+				<div class="content-left lecheflan">
+					<h1 class="menu-Title">Leche Flan</h1>
+				</div>
+				<div class="content-right">
+					<br><br><br>
+					<p>Leche Flan or Creme Caramel is a Filipino dessert made with egg yolks, milk, sugar, and vanilla extract. It is steamed in small baking pan called Llanera.</p>
+				</div>
+			</div>
+		</div>
+
+        <script>
+            function adob(){
+                document.getElementById("ado").style.display = "block";
+            }
+            function sinig(){
+                document.getElementById("sini").style.display = "block";
+            }
+            function bula(){
+                document.getElementById("bul").style.display = "block";
+            }
+            function leche(){
+                document.getElementById("lech").style.display = "block";
+            }
+        
+            function exit() {
+                document.getElementById("ado").style.display = "none";
+                document.getElementById("sini").style.display = "none";
+                document.getElementById("bul").style.display = "none";
+                document.getElementById("lech").style.display = "none";
+            }
+        </script>
+</body>
+</html>
